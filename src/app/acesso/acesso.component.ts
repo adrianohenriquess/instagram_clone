@@ -28,6 +28,7 @@ import { Component, OnInit } from '@angular/core';
           style({offset: 0.90, opacity: 1, transform: 'translateY(10px)'}),
           style({offset: 0.91, opacity: 1, transform: 'translateY(-10px)'}),
           style({offset: 0.94, opacity: 1, transform: 'translateY(10px)'}),
+          style({offset: 0.96, opacity: 1, transform: 'translateY(-10px)'}),
           style({offset: 1, opacity: 1, transform: 'translateX(0)'})
         ]))
       ])
@@ -51,4 +52,11 @@ export class AcessoComponentComponent implements OnInit {
     this.cadastro = event === 'cadastro' ? true : false;
   }
 
+  public inicioDaAnimacao(): void {
+    console.log('Teste inicio animacao')
+  }
+
+  public fimDaAnimacao(): void {
+    console.log('Teste fim animacao')
+  }
 }
